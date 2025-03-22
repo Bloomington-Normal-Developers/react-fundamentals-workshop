@@ -2,7 +2,7 @@
 // import {Card} from './components/Card'
 
 // Importing a default export from the Card component
-import Card from "./components/Card"
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <h1>React Fundamentals</h1>
       <Card />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

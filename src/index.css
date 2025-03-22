@@ -7,7 +7,20 @@
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 52px;
 }
 
+.card {
+  width: 550px;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
