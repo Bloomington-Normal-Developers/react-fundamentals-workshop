@@ -12,18 +12,27 @@ import React from "react";
 // }
 
 function Card() {
+  // const src = "https://picsum.photos/200"
+
+  const card = {
+    src: "https://picsum.photos/200",
+    title: "Lorem, Ipsum.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, necessitatibus veniam facilis optio rerum consequatur iure omnis velit. Optio, nobis!",
+  };
+
+  const capitalize = (string) => {
+    return string.toUpperCase();
+  };
+
   return (
     // Most attributes are camelCase, and className is used because class is a reserved keyword in JavaScript
     <div className="card">
-      <img src="https://picsum.photos/200" />
+      <img src={card.src} />
       {/* This is a Fragment */}
       <>
-        <h2>Lorem, Ipsum.</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-          necessitatibus veniam facilis optio rerum consequatur iure omnis
-          velit. Optio, nobis!
-        </p>
+        <h2>{capitalize(card.title)}</h2>
+        <p>{card.description}</p>
       </>
     </div>
   );
