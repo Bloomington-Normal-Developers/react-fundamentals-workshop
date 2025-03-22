@@ -17,7 +17,7 @@ function App() {
     <div>
       <h1>React Fundamentals</h1>
       <Section>
-        <Card card={card} backgroundColor="rebeccapurple" />
+        <Card card={card} backgroundColor="rebeccapurple" favorited={true} />
       </Section>
     </div>
   );

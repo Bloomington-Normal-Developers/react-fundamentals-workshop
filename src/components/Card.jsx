@@ -11,7 +11,7 @@ import React from "react";
 //     )
 // }
 
-function Card({ card, backgroundColor = "midnightblue" }) {
+function Card({ card, backgroundColor = "midnightblue", favorited }) {
   const capitalize = (string) => {
     return string.toUpperCase();
   };
@@ -22,7 +22,10 @@ function Card({ card, backgroundColor = "midnightblue" }) {
       <img src={card.src} />
       {/* This is a Fragment */}
       <>
-        <h2>{capitalize(card.title)}</h2>
+        <h2>
+          {capitalize(card.title)} <span>{favorited ? "⭐️" : ""}</span>
+        </h2>
+
         <p>{card.description}</p>
       </>
     </div>
