@@ -11,23 +11,14 @@ import React from "react";
 //     )
 // }
 
-function Card() {
-  // const src = "https://picsum.photos/200"
-
-  const card = {
-    src: "https://picsum.photos/200",
-    title: "Lorem, Ipsum.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, necessitatibus veniam facilis optio rerum consequatur iure omnis velit. Optio, nobis!",
-  };
-
+function Card({ card, backgroundColor = "midnightblue" }) {
   const capitalize = (string) => {
     return string.toUpperCase();
   };
 
   return (
     // Most attributes are camelCase, and className is used because class is a reserved keyword in JavaScript
-    <div className="card">
+    <div className="card" style={{ backgroundColor }}>
       <img src={card.src} />
       {/* This is a Fragment */}
       <>
