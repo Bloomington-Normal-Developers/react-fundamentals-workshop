@@ -1,0 +1,48 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+section {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: lime;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card {
+  width: 550px;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.line-through {
+  text-decoration: line-through;
+}
