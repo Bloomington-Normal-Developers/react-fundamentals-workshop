@@ -13,7 +13,7 @@ function TodoList() {
       <h2>Todo List</h2>
       <ul>
         {completedTodos.map((todo) => (
-          <TodoItem name={todo.name} completed={todo.completed} />
+          <TodoItem key={todo.id} name={todo.name} completed={todo.completed} />
         ))}
       </ul>
     </div>

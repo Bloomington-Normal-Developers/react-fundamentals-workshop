@@ -13,7 +13,7 @@ function App() {
       <h1>React Fundamentals</h1>
       <Section>
         {cards.map((card) => (
-          <Card card={card} />
+          <Card key={card.id} card={card} />
         ))}
       </Section>
       <Section>
