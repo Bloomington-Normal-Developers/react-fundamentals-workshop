@@ -13,7 +13,7 @@ function App() {
     <div>
       <h1>React Fundamentals</h1>
       <Section>
-        <Button />
+        <Button message="You really did click me!" />
       </Section>
       <Section>
         {cards.map((card) => (

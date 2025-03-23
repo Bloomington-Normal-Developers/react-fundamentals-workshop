@@ -1,9 +1,13 @@
-function Button() {
-  function handleClick() {
-    console.log("Button clicked!");
-  }
-
-  return <button onClick={handleClick}>Click me!</button>;
+function Button({ message }) {
+  return (
+    <button
+      onClick={() => {
+        console.log(message);
+      }}
+    >
+      Click me!
+    </button>
+  );
 }
 
 export default Button;
