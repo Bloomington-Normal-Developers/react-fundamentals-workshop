@@ -24,3 +24,18 @@ export const cards = [
     favorited: true,
   },
 ];
+
+export const todos = [
+  {
+    name: "Work out",
+    completed: true,
+  },
+  {
+    name: "Read Clean Code",
+    completed: false,
+  },
+  {
+    name: "Learn React",
+    completed: true,
+  },
+];
