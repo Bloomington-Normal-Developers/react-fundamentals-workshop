@@ -15,6 +15,17 @@ section {
   gap: 24px;
   justify-content: center;
   align-items: center;
+  margin: 24px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: lime;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .card {
