@@ -23,7 +23,7 @@ function Card({ card, backgroundColor = "midnightblue", favorited }) {
       {/* This is a Fragment */}
       <>
         <h2>
-          {capitalize(card.title)} <span>{favorited ? "⭐️" : ""}</span>
+          {capitalize(card.title)} <span>{favorited && "⭐️"}</span>
         </h2>
 
         <p>{card.description}</p>

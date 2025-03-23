@@ -1,11 +1,7 @@
 import React from "react";
 
 function TodoItem({ name, completed }) {
-  if (completed) {
-    return <li className="line-through">{name}</li>;
-  }
-
-  return <li>{name}</li>;
+  return <li className={`${completed ? "line-through" : ""}`}>{name}</li>;
 }
 
 function TodoList() {
