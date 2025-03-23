@@ -12,6 +12,7 @@ h1 {
 
 section {
   display: flex;
+  gap: 24px;
   justify-content: center;
   align-items: center;
 }

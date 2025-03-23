@@ -5,20 +5,16 @@
 import Card from "./components/Card";
 import Section from "./components/Section";
 import TodoList from "./components/TodoList";
+import { cards } from "./variables";
 
 function App() {
-  const card = {
-    src: "https://picsum.photos/200",
-    title: "Lorem, Ipsum.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, necessitatibus veniam facilis optio rerum consequatur iure omnis velit. Optio, nobis!",
-  };
-
   return (
     <div>
       <h1>React Fundamentals</h1>
       <Section>
-        <Card card={card} backgroundColor="rebeccapurple" favorited={true} />
+        {cards.map((card) => (
+          <Card card={card} />
+        ))}
       </Section>
       <Section>
         <TodoList />

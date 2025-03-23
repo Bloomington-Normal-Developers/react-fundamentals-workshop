@@ -11,19 +11,19 @@ import React from "react";
 //     )
 // }
 
-function Card({ card, backgroundColor = "midnightblue", favorited }) {
+function Card({ card }) {
   const capitalize = (string) => {
     return string.toUpperCase();
   };
 
   return (
     // Most attributes are camelCase, and className is used because class is a reserved keyword in JavaScript
-    <div className="card" style={{ backgroundColor }}>
+    <div className="card" style={{ backgroundColor: card.backgroundColor }}>
       <img src={card.src} />
       {/* This is a Fragment */}
       <>
         <h2>
-          {capitalize(card.title)} <span>{favorited && "⭐️"}</span>
+          {capitalize(card.title)} <span>{card.favorited && "⭐️"}</span>
         </h2>
 
         <p>{card.description}</p>
