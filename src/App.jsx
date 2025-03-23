@@ -4,6 +4,7 @@
 // Importing a default export from the Card component
 import Card from "./components/Card";
 import Section from "./components/Section";
+import TodoList from "./components/TodoList";
 
 function App() {
   const card = {
@@ -18,6 +19,9 @@ function App() {
       <h1>React Fundamentals</h1>
       <Section>
         <Card card={card} backgroundColor="rebeccapurple" favorited={true} />
+      </Section>
+      <Section>
+        <TodoList />
       </Section>
     </div>
   );
