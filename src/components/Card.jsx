@@ -1,5 +1,3 @@
-import React from "react";
-
 // Named export of the Card Component
 // export function Card() {
 //     return (
