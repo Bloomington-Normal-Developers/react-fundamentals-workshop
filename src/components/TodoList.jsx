@@ -1,4 +1,3 @@
-import React from "react";
 import { todos } from "../variables";
 
 function TodoItem({ name, completed }) {
