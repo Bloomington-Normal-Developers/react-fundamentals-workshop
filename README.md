@@ -1,8 +1,4 @@
-# React Workshop
-
-## What is React?
-
-## Getting Started
+# React Fundamentals Workshop
 
 Technologies used:
 
@@ -14,38 +10,47 @@ Technologies used:
 
 ## React
 
+0. What is React?
+   - What Can You Build with React?
+   - Needed Tools
+   - Getting the Starter Code Running
 1. Creating a React Component
-
-- How to Define a Component
-- Using a Component
-- Nesting Components
-
+   - What is a Component?
+   - Creating a Component
 2. Importing and Exporting Components
-   - The Root Component
-   - Exporting and Importing a Component
-   - Exporting and Importing Multiple Components from the Same File
+   - Create a new JSX file
+   - Exporting a Component
+   - What's the Difference?
 3. What is JSX?
-   - Converting HTML to JSX
+   - Why Use JSX ?
+   - Syntax Extension
+   - HTML-like Structure
+   - Embedding JavaScript
+   - React Elements
    - The Rules of JSX
 4. JavaScript in JSX
-   - Referencing a JavaScript variable in JSX
-   - Calling a JavaScript Function in JSX
-   - Referencing a JavaScript object in JSX
+   - Passing Variables into JSX
+   - JavaScript Objects in JSX
+   - JavaScript Functions in JSX
 5. What are Props?
-   - Passing Props to a Component
-   - Reading Props from a Component
-   - Specifying Default Values for Props
+   - How to Pass Props
+   - How to Read Props
+   - Default Values for Props
+   - How to Pass JSX to a Component
 6. Conditional Rendering
-   - Returning JSX based on a Condition
-   - Conditionally including JSX
-   - Conditionally Assigning JSX to a Variable
+   - Conditionally Returning a String
+   - Conditionally Returning JSX
+   - Conditionally Assigning ClassNames
 7. Rendering Lists
-   - Rendering Data from Arrays
-   - Filter Arrays of Items
-   - Keeping List Items in Order with `key`
-8. Pure Compenents
-   - Components as Formulas
-   - Side Effects
-9. React Render Tree
-   - What is the Render Tree is
-   - Module Dependency Tree
+   - Rendering Data in Arrays
+   - Rendering Filtered Arrays
+   - Keys
+8. Handling Events
+   - Adding Event Handlers
+   - Inlining Event Handlers
+   - Passing Props to Event Handlers
+   - Pass Functions, Don't Call Functions
+9. Managing State
+   - Why Not Use a Variable?
+   - Creating a State Variable with useState
+   - Multiple State Variables
