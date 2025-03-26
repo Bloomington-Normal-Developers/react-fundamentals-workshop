@@ -1,5 +1,3 @@
-import React from "react";
-
 function TodoItem({ name, completed }) {
   return <li className={`${completed ? "line-through" : ""}`}>{name}</li>;
 }
