@@ -5,15 +5,23 @@ function TodoItem({ name, completed }) {
 }
 
 function TodoList() {
-  const completedTodos = todos.filter((todo) => !todo.completed);
+  const incompleteTodos = todos.filter((todo) => {
+    return !todo.completed;
+  });
 
   return (
     <div>
       <h2>Todo List</h2>
       <ul>
-        {completedTodos.map((todo) => (
-          <TodoItem key={todo.id} name={todo.name} completed={todo.completed} />
-        ))}
+        {incompleteTodos.map((todo) => {
+          return (
+            <TodoItem
+              key={todo.id}
+              name={todo.name}
+              completed={todo.completed}
+            />
+          );
+        })}
       </ul>
     </div>
   );

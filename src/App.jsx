@@ -12,9 +12,9 @@ function App() {
     <div>
       <h1>React Fundamentals</h1>
       <Section>
-        {cards.map((card) => (
-          <Card key={card.id} card={card} />
-        ))}
+        {cards.map((card) => {
+          return <Card key={card.id} card={card} />;
+        })}
       </Section>
       <Section>
         <TodoList />
